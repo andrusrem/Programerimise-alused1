@@ -1,0 +1,49 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Programerimise alused Harjutus 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\Andrus Remets\github\ProgAlused\H1\css.css">
+    <script type="text/javascript" >
+
+      function checkTemp() {
+          let temp = document.forms['Temp']['temp'].value;
+          if (temp <= 20){
+              alert('Liiga külm')
+          }
+          else if (temp <= 40){
+              alert("Paras temperatuur")
+          }
+          else if (temp <= 60){
+              alert('Liiga kuum')
+          }
+          else {
+              alert('Kitjuta midagi muud')
+          }
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <hr>
+    <h1 style='padding-left: 34%' >Kirjuta temperatuur 0-60 kraadi vahel</h1>
+    <img style="position:absolute;" style="top:10px" src="580b585b2edbce24c47b263f.png" alt="Cloud">
+    <img style="position:absolute; right:10px;"  src="580b585b2edbce24c47b263f.png" alt="Cloud">
+    <h1 style='padding-left: 48%' >ja</h1>
+    <h1 style="padding-left: 43%" >vajutta nuppu</h1>
+
+    <div class="">
+      <form name='Temp' action="" onsubmit="return checkTemp()" method="post">
+        <label for="Get-temperatuur">Temperatuur:</label>
+        <input id="Get-temperatuur" type="number" name="temp" /><br />
+        <input style="margin-left: 13%" type="submit" value="Save!"/>
+
+      </form>
+
+    </div>
+    <hr>
+
+  </body>
+</html>>
