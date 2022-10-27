@@ -40,7 +40,7 @@ function olderSummary() {
           console.log(order["name"])
           console.log(order["amount"])
           console.log(order["price"])    
-          console.log(order["price"] * 0.2 + order['price'])
+          console.log((order["price"] * 0.2 + order['price']) * order['amount'])
       }
     
 }    
