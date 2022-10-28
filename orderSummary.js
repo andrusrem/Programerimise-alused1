@@ -33,7 +33,7 @@ function orderSummary() {
         } 
       ] 
      }
-      
+      let summa = 0
       let rows = tellimus['rows']
       for (const val in rows){
           let order = rows[val]
@@ -41,7 +41,8 @@ function orderSummary() {
           console.log(order["amount"])
           console.log(order["price"])    
           console.log((order["price"] * 0.2 + order['price']) * order['amount'])
+          summa += (order["price"] * 0.2 + order['price']) * order['amount']
       }
-    
+      console.log(summa)
 }    
 orderSummary()
