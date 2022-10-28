@@ -1,4 +1,4 @@
-function olderSummary() {
+function orderSummary() {
     var tellimus = { 
       "id": 2113, 
       "orderNumber": "E210126001", 
@@ -44,4 +44,4 @@ function olderSummary() {
       }
     
 }    
-olderSummary()
+orderSummary()
